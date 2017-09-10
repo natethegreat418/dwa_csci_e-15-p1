@@ -4,9 +4,11 @@
 
 .desc {
   margin: 1em;
-  font-size: 18px;
+  font-size: 1em;
 }
 
-img {
+#chngimg {
   margin: .5em;
+max-height: 300px;
+    max-width: 300px;
 }

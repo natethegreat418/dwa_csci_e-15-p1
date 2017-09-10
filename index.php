@@ -14,17 +14,44 @@
 </head>
 <body>
   <div class="container">
-    <div class="intro">
-      <h1>Nathan Marcus<h1>
-      <img src="http://i0.kym-cdn.com/entries/icons/original/000/018/012/Screen_Shot_2015-05-12_at_3.31.31_PM.png" alt="dogonfirememe">
-      <h3>About Me </h3>
+      <div class="row intro">
+          <div class="col">
+              <h1>Nathan Marcus</h1>
+        <img id="chngimg" src="" alt="">
+      </div>
+          </div>
+    <div class="row intro">
+    <div class="col">
+      <h3>About Me</h3>
       <p class='desc'>Above photo notwithstanding, I am a human who goes by Nate/Nathan. I work in e-commerce software product management for an international education companny in Cambridge, MA.  I like computer games, reading and learning new things.</p>
       <blockquote><?php echo($quotes[$selqt]); ?></blockquote>
     </div>
   </div>
+    </div>
 
   <!-- Jquery -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script>
+        $(document).ready(function(){
+        var rand = Math.floor(Math.random() * 2);
+        window.console&&console.log(rand);
+        
+        if (rand > 0)
+        
+        {
+            $("#chngimg").attr("src",'https://i.pinimg.com/736x/e6/98/bc/e698bc2a2c851be5138472f4da775290--nyan-cat-pusheen-cat.jpg')
+            $("#chngimg").attr("alt","pusheencat")
 
+        }
+        else {
+            
+            $("#chngimg").attr("src",'http://i0.kym-cdn.com/entries/icons/original/000/018/012/Screen_Shot_2015-05-12_at_3.31.31_PM.png')
+            $("#chngimg").attr("alt","dogonfirememe")
+        }
+        
+        
+        
+  })
+</script>
 </body>
 </html>
