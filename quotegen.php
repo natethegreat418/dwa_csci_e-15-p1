@@ -1,11 +1,9 @@
 <?php
 
-$quotes = [
-  '"The best is the enemy of the good." - Voltaire',
-  '"Better a diamond with a flaw than a pebble without." - Confucius',
-  '"Striving to better, oft we mar what’s well." - Shakespeare'
-];
+$quotesJson = file_get_contents('quotes.json');
 
-$selqt = (array_rand($quotes,1));
+$quotes = json_decode($quotesJson, true);
+
+$selectquote = array_rand($quotes,1);
 
 ?>

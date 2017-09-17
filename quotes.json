@@ -1,0 +1,22 @@
+{
+	"Voltaire": {
+		"id" : 0,
+    "quote": "The best is the enemy of the good.",
+		"author": "Voltaire",
+		"link" : "https://en.wikipedia.org/wiki/Perfect_is_the_enemy_of_good"
+	},
+
+  "Confucius": {
+    "id" : 1,
+    "quote":  "Better a diamond with a flaw than a pebble without.",
+    "author": "Confucius",
+    "link" : "http://www.quotationspage.com/quote/3619.html"
+  },
+
+  "William Shakespeare": {
+		"id" : 2,
+    "quote": "Striving to better, oft we mar what’s well.",
+		"author": "William Shakespeare",
+		"link" : "http://nfs.sparknotes.com/lear/page_74.html"
+	}
+}
